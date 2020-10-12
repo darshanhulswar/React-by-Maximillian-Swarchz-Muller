@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React - The Complete Guide (incl Hooks, React Router, Redux) by Maximillian Swarchzmuller 
+> ### **Rating:** ⭐⭐⭐⭐⭐
 
-## Available Scripts
+# React Complete Guide 
+### Section 1: Getting Started
+1. Introduction
+2. What is React
+3. Real-world SPA & React web Apps
+4. Writing our first React code
+5. Why should we choose React
+6. React Alternatives
+7. Understanding Single Page Applications and Multi Page Applications
+8. Course Outline
+9. How to get the most out of this course
 
-In the project directory, you can run:
+### Section 2: Refreshing Next Generation JavaScript
+1. Module Introduction
+2. Understandng let and const
+3. Arrow functions
+4. Exports and Imports
+5. Understanding Classes
+6. Classes, Properties, Methods
+7. The Spread and Rest operator
+8. Destructuring
+9. Reference and Primitives Refresh
+10. Refreshing array functions
+11. Wrap Up
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Section 3: Understanding the Base Features and Syntax
+1. Module Introduction
+2. The Build workflow
+3. Using create-react-app
+4. Understanding the Folder Structure
+5. Understanding the Component Basics
+6. Understanding JSX
+7. JSX Restrictions
+8. Creating a functional Component
+9. Components (File PDF)
+10. Working with Components and Re-using them
+11. Outputting Dynamic Content
+12. Working with props
+13. Understanding the children property 

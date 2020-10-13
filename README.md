@@ -41,3 +41,9 @@
 11. Outputting Dynamic Content
 12. Working with props
 13. Understanding the children property 
+14. Understanding and Using State
+15. Props and State (File)
+16. Handling Events with Methods
+17. To which Events Can You Listen
+18. Manipulating the State
+19. Function Components Naming

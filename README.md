@@ -47,3 +47,5 @@
 17. To which Events Can You Listen
 18. Manipulating the State
 19. Function Components Naming
+20. Using the useState() Hook for State Manipulation
+21. Stateless vs Stateful Component

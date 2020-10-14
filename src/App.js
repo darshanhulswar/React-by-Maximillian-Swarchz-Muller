@@ -4,6 +4,7 @@ import './App.css';
 
 const App = props => {
 
+  // Using useState() Hook
   const [personsState, setPersonsState] = useState({
     persons: [
       { name: 'Vidya', age: 21 },
@@ -11,6 +12,9 @@ const App = props => {
       { name: 'Tanya', age: 20 },
     ]
   })
+
+  const [otherState, setOtherState] = useState('Some Other State');
+  console.log(personsState, otherState);
 
   const switchNameHandler = () => {
     // console.log('Was clicked');

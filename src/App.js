@@ -10,11 +10,10 @@ const App = props => {
       { name: 'Vidya', age: 21 },
       { name: 'Neha', age: 221 },
       { name: 'Tanya', age: 20 },
-    ]
+    ],
+    otherState: 'Original Value'
   })
 
-  const [otherState, setOtherState] = useState('Some Other State');
-  console.log(personsState, otherState);
 
   const switchNameHandler = () => {
     // console.log('Was clicked');
@@ -24,7 +23,8 @@ const App = props => {
         { name: 'Darshan', age: 21 },
         { name: 'Max', age: 28 },
         { name: 'Staphanie', age: 27 }
-      ]
+      ],
+      otherState: 'Some other state'
     })
   }
 
@@ -36,9 +36,9 @@ const App = props => {
       <Person name={personsState.persons[0].name} age={personsState.persons[0].age} />
       <Person name={personsState.persons[1].name} age={personsState.persons[1].age}>My Hobby Racing</Person>
       <Person name={personsState.persons[2].name} age={personsState.persons[2].age} />
+
     </div>
   );
-  // return React.createElement('div', { className: 'App' }, React.createElement('h1', null, 'Hello this works now?'))
 }
 
 export default App;

@@ -1,9 +1,13 @@
-# React - The Complete Guide (incl Hooks, React Router, Redux) by Maximillian Swarchzmuller 
+# React - The Complete Guide (incl Hooks, React Router, Redux) by Maximillian Swarchzmuller
+
 > ### **My Personal Rating:** ⭐⭐⭐⭐⭐
+>
 > ### **Overall Rating:** ⭐⭐⭐⭐⭐
 
-# React Complete Guide 
+# React Complete Guide
+
 ### Section 1: Getting Started
+
 1. Introduction
 2. What is React
 3. Real-world SPA & React web Apps
@@ -15,6 +19,7 @@
 9. How to get the most out of this course
 
 ### Section 2: Refreshing Next Generation JavaScript
+
 1. Module Introduction
 2. Understandng let and const
 3. Arrow functions
@@ -28,6 +33,7 @@
 11. Wrap Up
 
 ### Section 3: Understanding the Base Features and Syntax
+
 1. Module Introduction
 2. The Build workflow
 3. Using create-react-app
@@ -40,7 +46,7 @@
 10. Working with Components and Re-using them
 11. Outputting Dynamic Content
 12. Working with props
-13. Understanding the children property 
+13. Understanding the children property
 14. Understanding and Using State
 15. Props and State (File)
 16. Handling Events with Methods
@@ -49,3 +55,7 @@
 19. Function Components Naming
 20. Using the useState() Hook for State Manipulation
 21. Stateless vs Stateful Component
+22. Passing Method References Between Components
+23. Adding Two Way Binding
+24. Adding Styling with Stylesheets
+25. Working with Inline Stylesheets

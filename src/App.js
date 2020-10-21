@@ -6,7 +6,7 @@ class App extends Component {
   state = {
     persons: [
       { name: "Vidya", age: 21 },
-      { name: "Neha", age: 221 },
+      { name: "Neha", age: 21 },
       { name: "Tanya", age: 20 },
     ],
   };
@@ -32,12 +32,22 @@ class App extends Component {
     })
   }
 
+
   render() {
+    const style = {
+      backgroundColor: '#ccc',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px',
+      cursor: 'pointer'
+    };
+
     return (
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p>This is really working!</p>
         <button
+          style={style}
           onClick={this.switchNameHandler.bind(
             this,
             "Darshan Hulswar"

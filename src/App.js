@@ -32,7 +32,6 @@ class App extends Component {
     })
   }
 
-
   render() {
     const style = {
       backgroundColor: '#ccc',
@@ -59,6 +58,7 @@ class App extends Component {
           name={this.state.persons[0].name}
           age={this.state.persons[0].age}
         />
+
         <Person
           click={this.switchNameHandler.bind(
             this,
@@ -69,7 +69,8 @@ class App extends Component {
           changeName={this.updateNameHandler}
         >
           My Hobby Racing
-                </Person>
+        </Person>
+
         <Person
           name={this.state.persons[2].name}
           age={this.state.persons[2].age}

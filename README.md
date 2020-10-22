@@ -59,3 +59,5 @@
 23. Adding Two Way Binding
 24. Adding Styling with Stylesheets
 25. Working with Inline Stylesheets
+26. Practise Section
+27. Assignment Section

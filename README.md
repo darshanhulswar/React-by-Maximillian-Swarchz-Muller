@@ -1,7 +1,5 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux) by Maximillian Swarchzmuller
 
-# React Complete Guide
-
 ### Section 1: Getting Started
 
 1. Introduction

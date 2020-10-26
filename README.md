@@ -1,5 +1,7 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux) by Maximillian Swarchzmuller
 
+> #### This README file contains my progress towards Learning React on Udemy
+
 ### Section 1: Getting Started
 
 1. Introduction
@@ -77,3 +79,4 @@
 1. Module Introduction
 2. Outlining the problem statement
 3. Setting Styles Dynamically
+4. Settng Classes Dynamically

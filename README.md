@@ -71,3 +71,9 @@
 10. Wrp Up
 11. Time to practise - Lists and Conditionals
 12. [Optional] Asssignment
+
+## Section 5: Styling React Components and Elements
+
+1. Module Introduction
+2. Outlining the problem statement
+3. Setting Styles Dynamically

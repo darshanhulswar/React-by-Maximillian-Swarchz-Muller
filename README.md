@@ -61,3 +61,19 @@
 25. Working with Inline Stylesheets
 26. Practise Section
 27. Assignment Section
+28. Useful Resources and Links
+
+## Section 4: Working with Lista and Conditionals
+
+1. Module Introduction
+2. Rendering Content Conditionally
+3. Handling Dynamic Content the JavaScript Way
+4. Outputting Lists (Intro)
+5. Outputting Lists
+6. Lists and State
+7. Updating the state Immutably
+8. Lists and Keys
+9. Flexible Lists
+10. Wrp Up
+11. Time to practise - Lists and Conditionals
+12. [Optional] Asssignment

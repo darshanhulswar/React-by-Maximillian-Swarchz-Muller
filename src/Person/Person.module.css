@@ -4,4 +4,11 @@
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     padding: 16px;
+    transition: 3s background-color;
+}
+
+@media (max-width: 500px) {
+    .Person {
+        background-color: rgb(173, 173, 173);
+    }
 }

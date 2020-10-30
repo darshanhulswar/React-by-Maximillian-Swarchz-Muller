@@ -50,6 +50,8 @@
     font-weight: bolder;
     cursor: pointer;
     box-shadow: 0 0 10px #282c34;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .App .btnDanger:hover {

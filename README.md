@@ -79,4 +79,11 @@
 1. Module Introduction
 2. Outlining the problem statement
 3. Setting Styles Dynamically
-4. Settng Classes Dynamically
+4. Settng Class Names Dynamically
+5. Adding and Using Radium
+6. Using Radium for Media Queries
+7. Enabling CSS Modules (Issue checked on GitHub and Solved)
+8. Enabling & Using CSS Modules
+9. Adding pseudo Selector
+10. Working with Media Queries
+11. Useful Resources and Links

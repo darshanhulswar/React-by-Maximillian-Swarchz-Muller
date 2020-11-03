@@ -87,3 +87,8 @@
 9. Adding pseudo Selector
 10. Working with Media Queries
 11. Useful Resources and Links
+
+## Section 6: Diving Deeper Into Components and React Internals
+
+1. Module Introduction
+2.

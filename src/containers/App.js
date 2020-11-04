@@ -12,7 +12,6 @@ class App extends Component {
     showPersons: false
   };
 
-  // Current Work going on here...
   updateNameHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex(p => {
       return p.id === id;
@@ -46,6 +45,7 @@ class App extends Component {
   render() {
     let persons = null;
     let btnClass = appStyles.btn;
+
     if (this.state.showPersons) {
       persons = (
         <div>
@@ -86,8 +86,8 @@ class App extends Component {
         {persons}
       </div>
     );
+
   }
 }
 
-// Wrap App component inside Radium
 export default App;

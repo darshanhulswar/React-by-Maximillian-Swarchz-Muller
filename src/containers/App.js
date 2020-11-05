@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Person from "../components/Persons/Person/Person";
+import Persons from "../components/Persons/Persons";
 import appStyles from "./App.module.css";
 
 class App extends Component {
@@ -49,16 +49,11 @@ class App extends Component {
     if (this.state.showPersons) {
       persons = (
         <div>
-          {
-            this.state.persons.map((person, index) => {
-              return <Person
-                click={() => this.deletePersonHandler(index)}
-                name={person.name}
-                age={person.age}
-                key={person.id}
-                changeName={(event) => this.updateNameHandler(event, person.id)} />
-            })
-          }
+          <Persons
+            persons={this.state.persons}
+            clicked={this.deletePersonHandler}
+            changed={this.updateNameHandler}
+          />
         </div>
       );
       btnClass = appStyles.btnDanger;

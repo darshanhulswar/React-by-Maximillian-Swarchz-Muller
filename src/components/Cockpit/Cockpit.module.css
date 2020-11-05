@@ -1,0 +1,44 @@
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.Cockpit .btn {
+    width: 200px;
+    height: 40px;
+    border: 0 solid;
+    border-radius: 5px;
+    background-color: rgb(128, 238, 128);
+    font-weight: bolder;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #282c34;
+    transition: 0.4s background-color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(179, 0, 0);
+}
+
+.Cockpit .btn:hover {
+    background: rgb(202, 56, 231);
+}
+
+.Cockpit .btnDanger {
+    padding: 6px;
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0 0 10px #282c34;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.Cockpit .btnDanger:hover {
+    background-color: salmon;
+}

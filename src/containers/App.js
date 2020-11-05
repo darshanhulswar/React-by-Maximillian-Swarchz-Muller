@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Persons from "../components/Persons/Persons";
+import Cockpit from '../components/Cockpit/Cockpit'
 import appStyles from "./App.module.css";
 
 class App extends Component {
@@ -44,7 +45,6 @@ class App extends Component {
 
   render() {
     let persons = null;
-    let btnClass = appStyles.btn;
 
     if (this.state.showPersons) {
       persons = (
@@ -56,28 +56,15 @@ class App extends Component {
           />
         </div>
       );
-      btnClass = appStyles.btnDanger;
-    }
-
-    const classes = [];
-    if (this.state.persons.length <= 2) {
-      classes.push(appStyles.red);
-    }
-
-    if (this.state.persons.length <= 1) {
-      classes.push(appStyles.bold);
     }
 
     return (
       <div className={appStyles.App}>
-        <h1>Hi, I'm a React App</h1>
-        <p className={classes.join(' ')}>This is really working!</p>
-        <button
-          className={btnClass}
-          onClick={this.togglePersonsHandler}
-        >
-          Toggle Persons
-        </button>
+        <Cockpit
+          personsLength={this.state.persons.length}
+          showPersons={this.state.showPersons}
+          togglePersonsHandler={this.togglePersonsHandler}
+        />
         {persons}
       </div>
     );

@@ -91,4 +91,4 @@
 ## Section 6: Diving Deeper Into Components and React Internals
 
 1. Module Introduction
-2.
+2. A Better Project Structure

@@ -92,3 +92,5 @@
 
 1. Module Introduction
 2. A Better Project Structure
+3. Comparing Stateless and Statefull Components
+4. Class-based vs Fucntional Components

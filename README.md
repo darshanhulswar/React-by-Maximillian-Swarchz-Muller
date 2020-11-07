@@ -94,3 +94,6 @@
 2. A Better Project Structure
 3. Comparing Stateless and Statefull Components
 4. Class-based vs Fucntional Components
+5. Class-based vs Functional Components
+6. class Component Life Cycle Overview
+7. Component Creation Lifecycle in Action

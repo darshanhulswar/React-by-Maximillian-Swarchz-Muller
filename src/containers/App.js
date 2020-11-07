@@ -20,9 +20,13 @@ class App extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log('[App.js] getDerivedStatFromProps ', props);
+    console.log('[App.js] getDerivedStateFromProps ', props);
     return state;
   }
+
+  // componentWillMount() {
+  //   console.log('[App.js] componentWillMount');
+  // }
 
   componentDidMount() {
     console.log('[App.js] componentDidMount');

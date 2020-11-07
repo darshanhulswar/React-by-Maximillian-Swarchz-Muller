@@ -4,14 +4,20 @@ import Cockpit from '../components/Cockpit/Cockpit'
 import appStyles from "./App.module.css";
 
 class App extends Component {
-  state = {
-    persons: [
-      { id: 'asdf1', name: "Vidya", age: 21 },
-      { id: 'qwer2', name: "Neha", age: 21 },
-      { id: 'zxcv3', name: "Tanya", age: 20 },
-    ],
-    showPersons: false
-  };
+
+  constructor(props) {
+    super(props);
+
+    console.log('[App.js] constructor');
+    this.state = {
+      persons: [
+        { id: 'asdf1', name: "Vidya", age: 21 },
+        { id: 'qwer2', name: "Neha", age: 21 },
+        { id: 'zxcv3', name: "Tanya", age: 20 },
+      ],
+      showPersons: false
+    };
+  }
 
   updateNameHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex(p => {

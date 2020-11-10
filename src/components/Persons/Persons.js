@@ -15,6 +15,10 @@ export class Persons extends Component {
         return null
     }
 
+    componentWillUnmount() {
+        console.log('[Persons.js] co mponentWillUnmount');
+    }
+
     shouldComponentUpdate(nextProps, nextState) {
         console.log('[Persons.js] shouldCOmponentUpdate');
         return true;

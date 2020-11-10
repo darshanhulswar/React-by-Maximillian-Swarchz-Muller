@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CockpitClasses from './Cockpit.module.css'
 
 const Cockpit = props => {
+    useEffect(() => {
+        console.log('[Cockpit.js] useEffect');
+
+        // HTTP Request
+        setTimeout(() => {
+            alert('Saved data to cloud!')
+        }, 1000)
+    }, [])
+    // use an empty array as an argument to useEffect like this useEffect(function, [])
 
     const classes = [];
     let btnClass = CockpitClasses.btn
@@ -10,11 +19,11 @@ const Cockpit = props => {
         btnClass = CockpitClasses.btnDanger
     }
 
-    if (props.personsLength <= 2) {
+    if (props.persons.length <= 2) {
         classes.push(CockpitClasses.red);
     }
 
-    if (props.personsLength <= 1) {
+    if (props.persons.length <= 1) {
         classes.push(CockpitClasses.bold);
     }
 

@@ -32,6 +32,11 @@ class App extends Component {
     console.log('[App.js] componentDidMount');
   }
 
+  componentDidUpdate() {
+    console.log('[App.js] componentDidUpdate');
+  }
+
+
   updateNameHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex(p => {
       return p.id === id;
@@ -78,11 +83,12 @@ class App extends Component {
       );
     }
 
+
     return (
       <div className={appStyles.App}>
         <Cockpit
           title={this.props.appTitle}
-          personsLength={this.state.persons.length}
+          persons={this.state.persons}
           showPersons={this.state.showPersons}
           togglePersonsHandler={this.togglePersonsHandler}
         />

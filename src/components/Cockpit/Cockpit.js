@@ -10,10 +10,17 @@ const Cockpit = props => {
             alert('Saved data to cloud!')
         }, 1000)
         return () => {
-            console.log('[Cockpit.js] clean up work n useEffect');
+            console.log('[Cockpit.js] clean up work in useEffect');
         }
     }, [])
     // use an empty array as an argument to useEffect like this useEffect(function, [])
+
+    useEffect(() => {
+        console.log('[Cockpit.js] in 2nd useEffect');
+        return () => {
+            console.log('[Cockpit.js] clean up work in 2nd useEffect');
+        }
+    })
 
     const classes = [];
     let btnClass = CockpitClasses.btn
@@ -22,11 +29,11 @@ const Cockpit = props => {
         btnClass = CockpitClasses.btnDanger
     }
 
-    if (props.persons.length <= 2) {
+    if (props.personsLength <= 2) {
         classes.push(CockpitClasses.red);
     }
 
-    if (props.persons.length <= 1) {
+    if (props.personsLength <= 1) {
         classes.push(CockpitClasses.bold);
     }
 
@@ -44,4 +51,4 @@ const Cockpit = props => {
     )
 }
 
-export default Cockpit
+export default React.memo(Cockpit)

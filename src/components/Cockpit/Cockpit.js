@@ -9,6 +9,9 @@ const Cockpit = props => {
         setTimeout(() => {
             alert('Saved data to cloud!')
         }, 1000)
+        return () => {
+            console.log('[Cockpit.js] clean up work n useEffect');
+        }
     }, [])
     // use an empty array as an argument to useEffect like this useEffect(function, [])
 

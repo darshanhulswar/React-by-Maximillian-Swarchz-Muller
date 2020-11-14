@@ -1,26 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import CockpitClasses from './Cockpit.module.css'
 
 const Cockpit = props => {
-    useEffect(() => {
-        console.log('[Cockpit.js] useEffect');
-
-        // HTTP Request
-        setTimeout(() => {
-            alert('Saved data to cloud!')
-        }, 1000)
-        return () => {
-            console.log('[Cockpit.js] clean up work in useEffect');
-        }
-    }, [])
-    // use an empty array as an argument to useEffect like this useEffect(function, [])
-
-    useEffect(() => {
-        console.log('[Cockpit.js] in 2nd useEffect');
-        return () => {
-            console.log('[Cockpit.js] clean up work in 2nd useEffect');
-        }
-    })
 
     const classes = [];
     let btnClass = CockpitClasses.btn

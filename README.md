@@ -97,3 +97,4 @@
 5. Class-based vs Functional Components
 6. class Component Life Cycle Overview
 7. Component Creation Lifecycle in Action
+8. Component Update Lifecycle (for props change)

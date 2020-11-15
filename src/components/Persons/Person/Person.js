@@ -12,8 +12,6 @@ export class Person extends Component {
                 <input type="text" onChange={this.props.changeName} value={this.props.name} />
             </Fragment>
         )
-
-
     }
 }
 

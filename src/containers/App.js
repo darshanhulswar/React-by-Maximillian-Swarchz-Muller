@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log('[App.js] getDerivedStateFromProps ', props);
+    console.log('[App.js] getDerivedStateFromProps', props);
     return state;
   }
 
@@ -74,7 +74,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('[App.js] render');
+    console.log('[App.js] rendering...');
     let persons = null;
 
     if (this.state.showPersons) {

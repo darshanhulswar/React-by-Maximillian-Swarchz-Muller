@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react'
+import PropTypes from 'prop-types';
+
 // import Aux from '../../../hoc/Auxiliary';
 // import personStyle from './Person.module.css';
 
@@ -15,6 +17,13 @@ export class Person extends Component {
 
 
     }
+}
+
+Person.propTypes = {
+    click: PropTypes.func,
+    name: PropTypes.string,
+    age: PropTypes.number,
+    change: PropTypes.func
 }
 
 export default Person

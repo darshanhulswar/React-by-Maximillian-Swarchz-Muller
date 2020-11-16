@@ -1,6 +1,4 @@
 import React, { Component, Fragment } from 'react'
-// import Aux from '../../../hoc/Auxiliary';
-// import personStyle from './Person.module.css';
 
 export class Person extends Component {
     render() {

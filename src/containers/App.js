@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Persons from "../components/Persons/Persons";
 import Cockpit from '../components/Cockpit/Cockpit';
-import WithClass from '../hoc/WithClass';
 import appStyles from "./App.module.css";
 
 class App extends Component {
@@ -32,6 +31,11 @@ class App extends Component {
 
   componentDidMount() {
     console.log('[App.js] componentDidMount');
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('[App.js] getSnapShotBeforeUpdate');
+    return null
   }
 
   componentDidUpdate() {
@@ -74,7 +78,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('[App.js] rendering...');
+    console.log('[App.js] render');
     let persons = null;
 
     if (this.state.showPersons) {
@@ -90,7 +94,7 @@ class App extends Component {
     }
 
     return (
-      <WithClass classes={appStyles.App}>
+      <div className={appStyles.App}>
         <button onClick={() => { this.setState({ showCockpit: false }) }}>Remove Cockpit</button>
         {
           (this.state.showCockpit) ? <Cockpit
@@ -101,7 +105,7 @@ class App extends Component {
           /> : null
         }
         {persons}
-      </WithClass>
+      </div>
     );
 
   }

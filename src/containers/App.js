@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Persons from "../components/Persons/Persons";
 import Cockpit from '../components/Cockpit/Cockpit';
-import WithClass from '../hoc/WithClass';
 import appStyles from "./App.module.css";
 
 class App extends Component {
 
   constructor(props) {
     super(props);
+
+    console.log('[App.js] constructor');
     this.state = {
       persons: [
         { id: 'asdf1', name: "Vidya", age: 21 },
@@ -17,6 +18,28 @@ class App extends Component {
       showPersons: false,
       showCockpit: true
     };
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    console.log('[App.js] getDerivedStateFromProps', props);
+    return state;
+  }
+
+  // componentWillMount() {
+  //   console.log('[App.js] componentWillMount');
+  // }
+
+  componentDidMount() {
+    console.log('[App.js] componentDidMount');
+  }
+
+  componentDidUpdate() {
+    console.log('[App.js] componentDidUpdate');
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('[App.js] shouldComponentUpdate');
+    return true
   }
 
   updateNameHandler = (event, id) => {
@@ -50,7 +73,7 @@ class App extends Component {
   }
 
   render() {
-    console.log('[App.js] render');
+    console.log('[App.js] rendering...');
     let persons = null;
 
     if (this.state.showPersons) {
@@ -66,7 +89,7 @@ class App extends Component {
     }
 
     return (
-      <WithClass classes={appStyles.App}>
+      <div className={appStyles.App}>
         <button onClick={() => { this.setState({ showCockpit: false }) }}>Remove Cockpit</button>
         {
           (this.state.showCockpit) ? <Cockpit
@@ -76,8 +99,8 @@ class App extends Component {
             togglePersonsHandler={this.togglePersonsHandler}
           /> : null
         }
-        {persons}
-      </WithClass>
+        { persons}
+      </div>
     );
 
   }

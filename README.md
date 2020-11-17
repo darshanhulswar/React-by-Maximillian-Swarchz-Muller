@@ -97,3 +97,9 @@
 5. Class-based vs Functional Components
 6. class Component Life Cycle Overview
 7. Component Creation Lifecycle in Action
+8. Component Update Lifecycle (for props Changes)
+9. Component Update Lifecycle (for state Changes)
+10. Using useEffect() in Functional Components
+11. Controlling the useEffect() Behavior
+12. Cleaning up with Lifecycle Hooks & useEffect()
+13. Cleanup Work with useEffect() - Ex

@@ -59,7 +59,7 @@
 27. Assignment Section
 28. Useful Resources and Links
 
-## Section 4: Working with Lista and Conditionals
+## Section 4: Working with Lists and Conditionals
 
 1. Module Introduction
 2. Rendering Content Conditionally

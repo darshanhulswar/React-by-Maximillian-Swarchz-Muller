@@ -16,7 +16,8 @@ class App extends Component {
         { id: 'zxcv3', name: "Tanya", age: 20 },
       ],
       showPersons: false,
-      showCockpit: true
+      showCockpit: true,
+      changeCounter: 0
     };
   }
 

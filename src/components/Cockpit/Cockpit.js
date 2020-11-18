@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import AuthContext from '../../context/auth-context';
 import CockpitClasses from './Cockpit.module.css'
 
 const Cockpit = props => {
@@ -39,15 +40,19 @@ const Cockpit = props => {
             >
                 Toggle Persons
         </button>
-            <button style={{
-                display: 'block',
-                width: '10rem',
-                height: '3rem',
-                margin: '1rem auto',
-                borderRadius: '0.4rem'
-            }}
-                onClick={props.login}
-            >Log in</button>
+            <AuthContext.Consumer>
+                {
+                    (context) => <button style={{
+                        display: 'block',
+                        width: '10rem',
+                        height: '3rem',
+                        margin: '1rem auto',
+                        borderRadius: '0.4rem'
+                    }}
+                        onClick={context.login}
+                    >Log in</button>
+                }
+            </AuthContext.Consumer>
         </div>
     )
 }

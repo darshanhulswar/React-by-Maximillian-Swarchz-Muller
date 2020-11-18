@@ -5,9 +5,15 @@ import PropTypes from 'prop-types';
 // import personStyle from './Person.module.css';
 
 export class Person extends Component {
+    constructor(props) {
+        super(props)
+
+        this.inputElementRef = React.createRef()
+    }
+
 
     componentDidMount() {
-        this.inputElement.focus()
+        this.inputElementRef.current.focus()
     }
 
     render() {
@@ -17,7 +23,7 @@ export class Person extends Component {
                 <p onClick={this.props.click}>Hello I'm {this.props.name} and I'm {this.props.age} years old</p>
                 <p>{this.props.children}</p>
                 <input
-                    ref={(inpEl) => { this.inputElement = inpEl }}
+                    ref={this.inputElementRef}
                     type="text"
                     onChange={this.props.changeName}
                     value={this.props.name} />

@@ -5,13 +5,22 @@ import PropTypes from 'prop-types';
 // import personStyle from './Person.module.css';
 
 export class Person extends Component {
+
+    componentDidMount() {
+        this.inputElement.focus()
+    }
+
     render() {
         console.log('[Person.js] rendering...');
         return (
             <Fragment>
                 <p onClick={this.props.click}>Hello I'm {this.props.name} and I'm {this.props.age} years old</p>
                 <p>{this.props.children}</p>
-                <input type="text" onChange={this.props.changeName} value={this.props.name} />
+                <input
+                    ref={(inpEl) => { this.inputElement = inpEl }}
+                    type="text"
+                    onChange={this.props.changeName}
+                    value={this.props.name} />
             </Fragment>
         )
     }

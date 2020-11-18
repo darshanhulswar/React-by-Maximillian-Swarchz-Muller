@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types';
 import withClass from '../../../hoc/WithClass';
+import AuthContext from '../../../context/auth-context';
 import classes from './Person.module.css';
 
 // import Aux from '../../../hoc/Auxiliary';
@@ -21,7 +22,9 @@ export class Person extends Component {
         console.log('[Person.js] rendering...');
         return (
             <Fragment>
-                {(this.props.isAuth) ? <p>Authenticated</p> : <p>Login</p>}
+                <AuthContext.Consumer>
+                    {(context) => context.isAuthenticated ? <p>Authenticated</p> : <p>Login</p>}
+                </AuthContext.Consumer>
                 <p onClick={this.props.click}>Hello I'm {this.props.name} and I'm {this.props.age} years old</p>
                 <p>{this.props.children}</p>
                 <input

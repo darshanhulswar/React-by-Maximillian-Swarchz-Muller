@@ -18,17 +18,13 @@ class App extends Component {
       ],
       showPersons: false,
       showCockpit: true,
-      isAuthenticated: false
+      authenticated: false
     };
   }
 
   static getDerivedStateFromProps(props, state) {
     console.log('[App.js] getDerivedStateFromProps', props);
     return state;
-  }
-
-  authenticationHandler = () => {
-    this.setState({ isAuthenticated: true })
   }
 
   // componentWillMount() {
@@ -78,6 +74,10 @@ class App extends Component {
     this.setState({ showPersons: !doesShow });
   }
 
+  loginHandler = () => {
+    this.setState({ authenticated: true })
+  }
+
   render() {
     console.log('[App.js] rendering...');
     let persons = null;
@@ -89,7 +89,6 @@ class App extends Component {
             persons={this.state.persons}
             clicked={this.deletePersonHandler}
             changed={this.updateNameHandler}
-            isAuthenticated={this.state.isAuthenticated}
           />
         </div>
       );
@@ -99,8 +98,8 @@ class App extends Component {
       <div className={appStyles.App}>
         <button onClick={() => { this.setState({ showCockpit: false }) }}>Remove Cockpit</button>
         <AuthContext.Provider value={{
-          isAuthenticated: this.state.isAuthenticated,
-          login: this.authenticationHandler
+          authenticated: this.state.authenticated,
+          login: this.loginHandler
         }}>
           {
             (this.state.showCockpit) ?
@@ -113,9 +112,9 @@ class App extends Component {
           }
           {persons}
         </AuthContext.Provider>
+
       </div>
     );
-
   }
 }
 

@@ -22,9 +22,7 @@ export class Persons extends PureComponent {
                 />
             )
         })
-
     }
-
 }
 
 

@@ -4,9 +4,6 @@ import withClass from '../../../hoc/WithClass';
 import AuthContext from '../../../context/auth-context';
 import classes from './Person.module.css';
 
-// import Aux from '../../../hoc/Auxiliary';
-// import personStyle from './Person.module.css';
-
 export class Person extends Component {
     constructor(props) {
         super(props)
@@ -15,16 +12,18 @@ export class Person extends Component {
     }
 
     componentDidMount() {
+        console.log(this.context);
         this.inputElementRef.current.focus()
     }
 
+    static contextType = AuthContext;
+
     render() {
         console.log('[Person.js] rendering...');
+
         return (
             <Fragment>
-                <AuthContext.Consumer>
-                    {(context) => context.isAuthenticated ? <p>Authenticated</p> : <p>Login</p>}
-                </AuthContext.Consumer>
+                { this.context.authenticated ? <p>Authenticated!!</p> : <p>Login</p>}
                 <p onClick={this.props.click}>Hello I'm {this.props.name} and I'm {this.props.age} years old</p>
                 <p>{this.props.children}</p>
                 <input

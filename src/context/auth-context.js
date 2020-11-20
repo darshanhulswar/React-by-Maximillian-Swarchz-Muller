@@ -1,7 +1,7 @@
 import React from 'react';
 
 const authContext = React.createContext({
-    isAuthenticated: false,
+    authenticated: false,
     login: () => { }
 })
 

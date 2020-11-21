@@ -88,7 +88,17 @@
 10. Working with Media Queries
 11. Useful Resources and Links
 
-## Section 6: Diving Deeper Into Components and React Internals
+## Section6. Debugging React Apps
+
+1. Module Introduction
+2. Understanding Error Messages
+3. Finding Logical Errors by using Dev Tools & Sourcemaps
+4. Working with the React Developer Tools
+5. Using Error Boundaries (React 16+)
+6. Wrap Up
+7. Useful Resources & Links
+
+## Section 7: Diving Deeper Into Components and React Internals
 
 1. Module Introduction
 2. A Better Project Structure
@@ -98,3 +108,38 @@
 6. class Component Life Cycle Overview
 7. Component Creation Lifecycle in Action
 8. Component Update Lifecycle (for props change)
+9. Component Update Lifecycle (for state Changes)
+10. Using useEffect() in Functional Components
+11. Controlling the useEffect() Behavior
+12. Cleaning up with Lifecycle Hooks & useEffect()
+13. Cleanup Work with useEffect() - Ex
+14. Using shouldComponentUpdate for Optimization
+15. Optimizing Functional Components with React.memo()
+16. When should you optimize
+17. PureComponents instead of shouldComponentUpdate
+18. How React Updates the DOM
+19. Rendering Adjacent JSX Elements
+20. Windows Users Must Read
+21. Using React.Fragment
+22. Higher Order Components (HOC) - Introduction
+23. Another Form of HOCs
+24. Passing Unknown Props
+25. Setting State Correctly
+26. Using PropTypes
+27. Using Refs
+28. Refs with React Hooks
+29. Understanding Prop Chain Problems
+30. Using the Context API
+31. contextType & useContext()
+32. Wrap Up
+33. Useful Resources & Links
+    > Note: [Legacy] Course Content. ie Similar to previous but updated
+
+## Section 8: A Real App The Burger Builder (Basic Version)
+
+1. About React Hooks
+2. Module Introduction
+3. Planning an App in React - Core Steps
+4. Planning our App - Layout and Component Tree
+5. Planning the State
+6. Setting up the Project
